@@ -216,7 +216,7 @@
 
       if (noteEl) {
         noteEl.textContent = addonsQuoted.length
-          ? "Note: quoted/range items are not included in the total above until confirmed."
+          ? "Note: Lowest price for quoted items is shown. Final price may vary based on project details."
           : "";
       }
     }
@@ -233,7 +233,7 @@
     const rulesGrid = $("#rulesGrid");
     if (!rulesGrid) return;
     rulesGrid.innerHTML = window.CV_DATA.rules.map(r => {
-      const items = r.items.map(x => `<li class="muted">${x}</li>`).join("");
+      const items = r.items.map(x => `<li class="rulestex">${x}</li>`).join("");
       return `<div class="card"><h3 class="card-title">${r.title}</h3><ul>${items}</ul></div>`;
     }).join("");
   }
@@ -274,8 +274,8 @@
               <img loading="lazy" src="${photoSrc}" alt="${m.name} photo" width="600" height="600" />
             </div>
             <div>
-              <h3 class="card-title" style="margin:0;">${m.name} <span class="muted">— ${m.role}</span></h3>
-              <p class="muted">${m.bio}</p>
+              <h3 class="team-title" style="margin:0;">${m.name} <span class="team-role">— ${m.role}</span></h3>
+              <p class="team-desc">${m.bio}</p>
               <p class="tiny">${links}</p>
             </div>
           </div>

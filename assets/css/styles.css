@@ -94,9 +94,9 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
   font-weight:900;
   letter-spacing:.5px;
 }
-.brand-text{ display:flex; flex-direction:column; line-height:1.1; }
+.brand-text{ display:flex; flex-direction:column; line-height:1.4; }
 .brand-name{ font-weight:900; }
-.brand-tag{ font-size:.86rem; color:var(--text2); }
+.brand-tag{ font-size:.83rem; color:var(--text2); }
 
 /* Nav */
 .nav{ display:flex; align-items:center; position:relative; }
@@ -141,23 +141,37 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 }
 .page-head{ padding:26px 0 8px; }
 .page-head h1{ margin:0 0 10px; font-size:2rem; }
-.lead{ font-size:1.05rem; color:var(--text2); margin:0 0 14px; }
+.lead{ font-size:1.14rem; color:var(--text2); margin:0 0 14px; }
 
 .section-head{ margin-bottom:14px; }
-.section-head h2{ margin:0; font-size:1.55rem; }
+.section-head h2{ margin:0; font-size:1.59rem; }
 .section-head p{ margin:6px 0 0; color:var(--muted); }
 
+.underline{
+  text-decoration: underline;
+  text-decoration-style: double;
+  font-style: italic;
+  font-family: Optima;
+  font-size: 3.28rem;
+  color: rgb(174, 32, 39);
+}
+
+.underlinecontact{
+  text-decoration: underline;
+  font-weight: bold;
+}
 /* Cards */
 .card{
-  background: linear-gradient(180deg, rgba(26,26,26,.94), rgba(26,26,26,.93));
+  background: linear-gradient(180deg, rgba(26,26,26,.99), rgba(26,26,26,.945));
   border:1px solid var(--border);
   border-radius:var(--radius);
   padding:18px;
   box-shadow:var(--shadow);
 }
-.card-title{ margin:0 0 10px; font-size:1.1rem; color: rgb(213, 213, 213) }
-.muted{ color:var(--muted); }
-.tiny{ font-size:.86rem; color:var(--muted); }
+.card-title{ margin:0 0 10px; font-size:1.49rem; color: rgb(213, 213, 213) }
+.muted{ color:var(--muted); font-size:1.09rem;}
+.tiny{ font-size:.91rem; color:var(--muted); }
+.rulestex{ margin:0 0 2.4px; color:var(--text2); font-size:1.037rem;}
 
 .cards-3{
   display:grid;
@@ -251,6 +265,7 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
   border:1px solid var(--border);
   overflow:hidden;
   background: rgba(18,18,18,.35);
+  max-height: 400px;
 }
 .media img{
   width:100%;
@@ -312,7 +327,7 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 }
 .footer-grid{
   display:grid;
-  grid-template-columns: 1.2fr .8fr 1fr;
+  grid-template-columns: 1.2fr 2fr 1fr;
   gap:14px;
   align-items:center;
 }
@@ -419,6 +434,20 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
   gap:14px;
 }
 
+.team-role{
+  font-size: .95rem;
+  color: var(--muted);
+}
+
+.team-desc{
+  font-size: 1rem;
+  color: var(--text2);
+}
+
+.team-title{
+  font-size: 1.35rem;
+  color: var(--text);
+}
 @media (max-width: 900px){
   .estimate-head{ align-items:flex-start; }
   .contact-meta{ flex-direction:column; }
